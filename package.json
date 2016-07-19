@@ -4,7 +4,7 @@
   "description": "Filters GPS data based on speed",
   "main": "speedfilter.js",
   "scripts": {
-    "test": "mocha tests -watch --recursion"
+    "test": "mocha tests --recursion"
   },
   "keywords": [
     "GPS",
