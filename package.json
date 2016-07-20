@@ -1,10 +1,11 @@
 {
   "name": "speed-filter",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Filters GPS data based on speed",
   "main": "speedfilter.js",
   "scripts": {
-    "test": "mocha tests --recursion"
+    "test": "mocha tests --recursion",
+    "coveralls": "istanbul cover _mocha --report lcovonly -- -R spec tests.js && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "keywords": [
     "GPS",
@@ -16,7 +17,6 @@
   "license": "MIT",
   "devDependencies": {
     "chai": "^3.5.0",
-    "coveralls": "^2.11.11",
     "istanbul": "^0.4.4",
     "mocha-lcov-reporter": "^1.2.0"
   },

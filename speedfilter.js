@@ -1,5 +1,5 @@
 function speedFilter() {}
-var moment = require('moment')
+var moment = require('moment');
 
 speedFilter.prototype.calcSpeeds = function(points) {
     var elapsed = [],
